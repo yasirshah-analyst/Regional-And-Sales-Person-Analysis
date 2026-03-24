@@ -118,8 +118,6 @@ Calculated the number of orders in the data set using : COUNTA(data1!A2:A501)
 This Formula Count all non-empty cells in column A (range A2:A501).
 
 **Formulas used in answering these business questions**
-Screenshot:
-![kpi_Calculation](Cleaning/Screenshots/Analysis/Screenshots/kpi_formulas.jpg)
 
 ---
 
