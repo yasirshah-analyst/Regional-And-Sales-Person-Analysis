@@ -58,6 +58,8 @@ Customer_Segment
 Screenshot:
 ![1_to_35_](Data/screenshot/dataset.png)
 
+---
+
 ## Data Analysis
 
 ### Data Analysis using advanced excel formulas:
@@ -117,8 +119,6 @@ Calculated the number of orders in the data set using : COUNTA(data1!A2:A501)
 
 This Formula Count all non-empty cells in column A (range A2:A501).
 
-**Formulas used in answering these business questions**
-
 ---
 
 ### What is the average SalesAmount per order?
@@ -159,6 +159,8 @@ INDEX(data1!C2:C501, MATCH(...)) Retrieved the region name from column C that co
 
 As a Result this formula returns the region with the highest total sales in column I.
 
+---
+
 **Advanced Excel Formula Analysis**
 Screenshot:
 ![kpi_Calculation](Analysis/screenshots/Formulas.png)
@@ -191,6 +193,8 @@ This Pivot Table provides a detailed analysis of sales performance at the indivi
 
 Analysis Screenshot:
 ![Analysis](Analysis/screenshots/table_3.png)
+
+---
 
 ### Insights Generated
 
@@ -248,7 +252,7 @@ Slicers are interactive filters that make analyzing Pivot Table data easy and in
 
 - Customer Segment
 
-
+---
 
 Dashboard Screenshot:
 ![Dashboard](Dashboard/screenshot/dashboard.png)
