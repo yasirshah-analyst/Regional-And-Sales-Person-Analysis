@@ -2,7 +2,7 @@
 
 ## Project Overview 
 
-This project is a comprehensive sales performance analytics solution built entirely in Microsoft Excel. It focuses on transforming raw transactional sales data into an interactive dashboard that provides actionable insights into monthly trends, regional effectiveness and individual salesperson productivity.
+This project is a comprehensive sales performance analytics solution built entirely in Excel. It focuses on transforming transactional sales data into an interactive dashboard that provides actionable insights into monthly sales trends, regional effectiveness and individual salesperson productivity.
 
 ---
 
