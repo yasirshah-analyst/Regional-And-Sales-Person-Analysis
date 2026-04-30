@@ -255,7 +255,7 @@ Slicers are interactive filters that make analyzing Pivot Table data easy and in
 ---
 
 Dashboard Screenshot:
-![Dashboard](Dashboard/screenshot/dashboard.png)
+<img width="1280" height="769" alt="dashboard" src="https://github.com/user-attachments/assets/657f8da7-8089-46b8-a4ed-ef5949ea0a0e" />
 
 ---
 
