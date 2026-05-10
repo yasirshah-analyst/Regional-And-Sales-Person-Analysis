@@ -70,12 +70,10 @@ The dataset was analyzed to answer the following business questions using advanc
 
 Found the the Product Name and Quantity for Order ID "ORD-1232" using : 
 
-```excel
+```Formula
+excel
 =TEXTJOIN(": ",TRUE,XLOOKUP("ORD-1232",data1!A2:A501,data1!E2:E501),XLOOKUP("ORD-1232",data1!A2:A501,data1!G2:G501))
 ```
-
-TEXTJOIN(": ",TRUE,XLOOKUP("ORD-1232",data1!A2:A501,data1!E2:E501),XLOOKUP("ORD-1232",data1!A2:A501,data1!G2:G501))
-
 XLOOKUP searches for the order number "ORD-1232" in the range data1!A2:A501. It retrieves the corresponding values from column E and column G.
 
 TEXTJOIN combines these two values into a single string, separated by ": ".
