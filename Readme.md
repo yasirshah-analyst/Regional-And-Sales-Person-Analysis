@@ -22,6 +22,29 @@ This project is a comprehensive sales performance analytics solution built entir
 
 ---
 
+START ─────────────────────────────────────────────
+
+HR Analytics Dashboard Project/
+│
+├── Data/
+│   └── screenshot/
+│       └── dataset.png
+│
+├── Analysis/
+│   └── screenshots/
+│       ├── Formulas.png
+│       ├── table_1.png
+│       ├── table_2.png
+│       └── table_3.png
+│
+├── Dashboard/
+│   └── screenshot/
+│       └── dashboard.png
+│
+└── README.md
+
+END ─────────────────────────────────────────────
+
 ## ## Dataset Information
 - **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals.
 - The raw data set has 501 rows including header row and the following ten columns
