@@ -44,7 +44,7 @@ HR Analytics Dashboard Project/
 └── README.md
 
 END ─────────────────────────────────────────────
-
+```
 ## ## Dataset Information
 - **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals.
 - The raw data set has 501 rows including header row and the following ten columns
