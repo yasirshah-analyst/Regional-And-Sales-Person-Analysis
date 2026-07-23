@@ -186,5 +186,3 @@ Regional-And-Sales-Person-Analysis/
 
 - www.linkedin.com/in/yasir-shah-2364183b3
 - shahyasir443@gmail.com
-
-SUMIFS Found rows where Category = Electronics, Region = West, Date between 1-Apr-2023 and 30-Jun-2023, then sums corresponding I column values.
