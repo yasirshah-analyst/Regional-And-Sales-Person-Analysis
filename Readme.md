@@ -17,7 +17,6 @@ Interactive Excel dashboard analyzing regional and salesperson sales performance
 9. [Key Insights](#key-insights)
 10. [Recommendations](#recommendations)
 11. [Repository Structure](#repository-structure)
-12. [Limitations & Next Steps](#limitations--next-steps)
 
 ---
  
