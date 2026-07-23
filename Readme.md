@@ -1,86 +1,73 @@
 # Regional & Salesperson Revenue Analysis 2023
 
 ## Project Overview 
+Interactive Excel dashboard analyzing regional and salesperson sales performance to support data-driven revenue and territory decisions.
 
-This project is a comprehensive sales performance analytics solution built entirely in Excel. It focuses on transforming transactional sales data into an interactive dashboard that provides actionable insights into monthly sales trends, regional effectiveness and individual salesperson productivity.
+---
+
+## Table of Contents
+1. [Business Problem](#business-problem)
+2. [Project Objective](#project-objective)
+3. [Dataset](#dataset)
+4. [Tools Used](#tools-used)
+5. [Workflow](#workflow)
+6. [Data Analysis (Advanced Formulas)](#data-analysis-advanced-formulas)
+7. [Data Analysis (Pivot Tables)](#data-analysis-pivot-tables)
+8. [Dashboard](#dashboard)
+9. [Key Insights](#key-insights)
+10. [Recommendations](#recommendations)
+11. [Repository Structure](#repository-structure)
+12. [Limitations & Next Steps](#limitations--next-steps)
+
+---
+ 
+## Business Problem
+Sales leadership had no consolidated view of **which regions and salespeople were driving revenue** and which were underperforming. Decisions on territory support, incentive design, and resource allocation were being made without a clear, data-backed picture of performance trends.
 
 ---
 
 ## Project Objectives 
-- Analyze sales data by months, region and sales person using pivot tables.
-- Calculate KPIs using advanced excel formulas.
-- gernerates key insights and visulize it using interactive excel dashboard.
+Build an Excel dashboard that lets stakeholders:
+- Track monthly sales trends over time
+- Compare performance across regions
+- Identify top and bottom-performing salespeople
+- Filter dynamically by region, product category, and customer segment
+
+---
+
+## ## Dataset Information
+- **Source:** Synthetic dataset generated for portfolio purposes. Does not represent real individuals or companies.
+- **Size:** 501 rows (500 orders + header), 10 columns
+- **Columns:** `Order_ID`, `Order_Date`, `Region`, `Sales_person`, `Product_Category`, `Product`, `Unit_Price($)`, `Quantity`, `Sales_Amount($)`, `Customer_Segment`
+- **Type:** Sales transaction data
+> **Privacy note:** The full workbook is not shared publicly. Sample screenshots are included below to demonstrate the analysis workflow.
+
+**Data set from row 1 to 35**
+Screenshot:
+![1_to_35_](Data/screenshot/dataset.png)
 
 ---
 
 ## Tools Used
 - Excel
-- Excel Ribbon Tools
-- Excel Formulas & Functions
-- Pivot Tables
-- Pivot Charts
+- Excel Formulas & Functions (XLOOKUP, INDEX/MATCH, SUMIFS, COUNTIFS)
+- PivotTables & Pivot Charts
+- Slicers (interactive filtering)
 
 ---
-```text
-START ─────────────────────────────────────────────
 
-HR Analytics Dashboard Project/
-│
-├── Data/
-│   └── screenshot/
-│       └── dataset.png
-│
-├── Analysis/
-│   └── screenshots/
-│       ├── Formulas.png
-│       ├── table_1.png
-│       ├── table_2.png
-│       └── table_3.png
-│
-├── Dashboard/
-│   └── screenshot/
-│       └── dashboard.png
-│
-└── README.md
-
-END ─────────────────────────────────────────────
+## Workflow
+This project follows a standard analytics lifecycle:
+ 
+```
+Raw Data → Data Validation → Formula-Based Analysis → Pivot Table Summarization → Dashboard & Visualization → Insights → Recommendations
 ```
 ---
-## ## Dataset Information
-- **Source:** The data set used in this project was generated using AI for portfolio purpose. All data is synthetic and does not represent real individuals.
-- The raw data set has 501 rows including header row and the following ten columns
-Order_ID
 
-Order_Date
-
-Region
-
-Sales_person
-
-Product_Category
-
-Product
-
-Unit_Price($)
-
-Quantity
-
-Sales_Amount($)
-
-Customer_Segment
-
-- Type: Sales Analytics
 
 ---
 
-## Privacy Notice
-- Due to privacy considerations,the complete Excel dataset is not publicly shared. Selected sample screenshots from dataset is provided to demonstrate analysis workflow.
 
----
-
-**Data set from row 1 to 35**
-Screenshot:
-![1_to_35_](Data/screenshot/dataset.png)
 
 ---
 
@@ -318,4 +305,29 @@ Dashboard Screenshot:
 <img width="1280" height="769" alt="dashboard" src="https://github.com/user-attachments/assets/657f8da7-8089-46b8-a4ed-ef5949ea0a0e" />
 
 ---
+
+```text
+START ─────────────────────────────────────────────
+
+HR Analytics Dashboard Project/
+│
+├── Data/
+│   └── screenshot/
+│       └── dataset.png
+│
+├── Analysis/
+│   └── screenshots/
+│       ├── Formulas.png
+│       ├── table_1.png
+│       ├── table_2.png
+│       └── table_3.png
+│
+├── Dashboard/
+│   └── screenshot/
+│       └── dashboard.png
+│
+└── README.md
+
+END ─────────────────────────────────────────────
+```
 
