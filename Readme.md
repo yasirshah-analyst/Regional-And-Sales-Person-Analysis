@@ -101,100 +101,57 @@ Screenshot:
 
 ### Data Analysis using Pivot Tables
 
-#### Monthly Sales Trend
-
-This Pivot Table provides a clear and structured view of sales performance over time by summarizing total sales on a monthly basis. 
+**Monthly Sales Trend** — summarizes total sales by month to reveal growth patterns. 
 
 Analysis Screenshot:
 ![Analysis](Analysis/screenshots/table_1.png)
 
 ---
 
-#### Sales by Region
-
-This Pivot Table presents a regional breakdown of sales, helping to evaluate performance across different geographic areas.
+**Sales by Region** — breaks down revenue by geography to compare regional performance.
 
 Analysis Screenshot:
 ![Analysis](Analysis/screenshots/table_2.png)
 
 ---
 
-#### Indivisual Sales
-
-This Pivot Table provides a detailed analysis of sales performance at the individual salesperson level. It helps evaluate each salesperson’s contribution to overall revenue and supports performance-based decision-making.
+**Individual Salesperson Performance** — evaluates each rep's contribution to total revenue.
 
 Analysis Screenshot:
 ![Analysis](Analysis/screenshots/table_3.png)
 
 ---
 
-### Insights Generated
-
-- Sales show a consistent upward trend from January to August, indicating steady business growth.
-- The North region contributes the highest share of total sales, making it the top-performing region, suggesting opportunities to balance growth across other regions.
-- One salesperson leads with the highest sales, while others have room to improve and boost their performance.
-
----
-
-## 📊 Dashboard Creation: An excel dashboard was created to summarize insights visually.
-
-The dashboard includes:
-
-- KPIs
-
-- Pivot Charts
-
-- Slicers
-
----
-
-### Key Performance Indicators (KPIs): The following KPIs were displayed at the top of the dashboard to summarize overall performance:
-
-- Total Orders
-
-- Total Sales
-
-- Average SalesAmount per Order
-
-- Product with the highest Total SalesAmount 
-
-- Region with the highest total SalesAmount
-
----
-
-### Pivot Charts
-
-Pivot Charts provide a visual representation of Pivot Table data, making it easier to analyze patterns, compare performance, and identify trends. They help transform complex data into clear, interactive insights for better decision-making. the following pivot charts are used
-
-- Monthly Sales Trend
-
-- Sales by Region
-
-- Indivisual Sales
-
----
-
-### Slicers
-
-Slicers are interactive filters that make analyzing Pivot Table data easy and intuitive. They allow you to quickly filter by categories like Region, Product Category, or Cuustomer Segment, helping you focus on specific insights without altering the underlying data. the following slicers are used
-
-- Region
-
-- Product Category
-
-- Customer Segment
-
----
+## Dashboard
+An interactive dashboard consolidates all analysis into a single view:
+ 
+- **KPIs:** Total Orders · Total Sales · Average Sales per Order · Top Product · Top Region
+- **Pivot Charts:** Monthly Trend · Sales by Region · Individual Salesperson Performance
+- **Slicers:** Region · Product Category · Customer Segment
 
 Dashboard Screenshot:
-<img width="1280" height="769" alt="dashboard" src="https://github.com/user-attachments/assets/657f8da7-8089-46b8-a4ed-ef5949ea0a0e" />
+![dashboard](Dashboard/screenshot/dashboard.png)
 
 ---
 
-```text
-START ─────────────────────────────────────────────
+### Insights Generated
 
-HR Analytics Dashboard Project/
+- Sales grew consistently from January through August, indicating steady overall business growth.
+- The **North region** generates the highest share of total revenue, making it the top-performing territory.
+- Performance is uneven across the sales team — one salesperson significantly outperforms the rest.
+
+---
+
+## Recommendations
+- **Investigate what's working in the North region** (pricing, customer mix, product focus) and evaluate whether those tactics can be replicated in underperforming regions.
+- **Pair top performers with lower-performing salespeople** through mentorship, or review whether territory/account assignment is creating an uneven playing field.
+- **Set monthly growth targets** using the observed Jan–Aug trend as a baseline, and monitor via the dashboard's KPI section going forward.
+
+---
+
+## Repository Structure
+```
+Regional-And-Sales-Person-Analysis/
 │
 ├── Data/
 │   └── screenshot/
@@ -211,17 +168,24 @@ HR Analytics Dashboard Project/
 │   └── screenshot/
 │       └── dashboard.png
 │
-└── README.md
-
-END ─────────────────────────────────────────────
+└── Readme.md
 ```
+---
 
-#### Calculate Total Sales for Electronics in the West Region during Q2 2023 (April-June)
+*This project is part of a data analytics portfolio. See more projects at [github.com/yasirshah-analyst](https://github.com/yasirshah-analyst).*
 
-Calculated the Total Sales for Electronics in the West Region during Q2 2023 (April-June) using : 
+---
 
-**Formula:**
-```excel
-=SUMIFS(data1!I2:I501,data1!E2:E501,"Electronics",data1!C2:C501,"West",data1!B2:B501,">="&DATE(2023,4,1),data1!B2:B501,"<="&DATE(2023,6,30))
-```
+## 👤 Author
+
+- Yasir Shah
+- Data Analyst | SQL | Power BI | Excel
+
+---
+
+## Connect
+
+- www.linkedin.com/in/yasir-shah-2364183b3
+- shahyasir443@gmail.com
+
 SUMIFS Found rows where Category = Electronics, Region = West, Date between 1-Apr-2023 and 30-Jun-2023, then sums corresponding I column values.
