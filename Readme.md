@@ -71,140 +71,25 @@ Raw Data → Data Validation → Formula-Based Analysis → Pivot Table Summariz
 
 ---
 
-## Data Analysis
-
-### Data Analysis using advanced excel formulas:
+## Data Analysis (Advanced Formulas)
+The dataset was used to answer specific business questions using advanced Excel formulas:
  
-The dataset was analyzed to answer the following business questions using advanced excel formulas
-
-#### Find the Product Name and Quantity for Order ID "ORD-1232".
-
-Found the the Product Name and Quantity for Order ID "ORD-1232" using : 
-
-**Formula:**
-```excel
-=TEXTJOIN(": ",TRUE,XLOOKUP("ORD-1232",data1!A2:A501,data1!E2:E501),XLOOKUP("ORD-1232",data1!A2:A501,data1!G2:G501))
-```
-XLOOKUP searches for the order number "ORD-1232" in the range data1!A2:A501. It retrieves the corresponding values from column E and column G.
-
-TEXTJOIN combines these two values into a single string, separated by ": ".
-
-The TRUE argument ignores any empty cells.
-
-
----
-
-#### Find the Salesperson who made the sale with Order ID "ORD-1467".
-
-Found the Salesperson who made the sale with Order ID "ORD-1467" using :
-
-**Formula:**
-```excel
-= INDEX(data1!D2:D501,MATCH("ORD-1467",data1!A2:A501,0))
-```
-MATCH found the position (row number) of "ORD-1467" in column A (range A2:A501). 0 means an exact match.
-
-INDEX fetch the value from column D (range D2:D501) at the row number found by MATCH.
-
----
-
-#### Calculate Total Sales for Electronics in the West Region during Q2 2023 (April-June)
-
-Calculated the Total Sales for Electronics in the West Region during Q2 2023 (April-June) using : 
-
-**Formula:**
+| Business Question | Technique |
+|---|---|
+| Find product & quantity for a given Order ID | `XLOOKUP` + `TEXTJOIN` |
+| Find salesperson for a given Order ID | `INDEX` + `MATCH` |
+| Total sales for Electronics in West region, Q2 2023 | `SUMIFS` with date range |
+| Orders by Enterprise customers with quantity > 5 | `COUNTIFS` |
+| Total & average sales amount | `SUM`, `AVERAGE` |
+| Total number of orders | `COUNTA` |
+| Best-selling product | `INDEX` + `MATCH` + `MAX` + `SUMIF` |
+| Top-performing region | `INDEX` + `MATCH` + `MAX` + `SUMIF` |
+ 
+**Example — Total Sales for Electronics in West Region, Q2 2023:**
 ```excel
 =SUMIFS(data1!I2:I501,data1!E2:E501,"Electronics",data1!C2:C501,"West",data1!B2:B501,">="&DATE(2023,4,1),data1!B2:B501,"<="&DATE(2023,6,30))
 ```
-SUMIFS Found rows where Category = Electronics, Region = West, Date between 1-Apr-2023 and 30-Jun-2023, then sums corresponding I column values.
-
----
-
-#### How many orders were placed by Enterprise customers for SMB with quantity greater than 5?
-
-Calculated total orders placed by Enterprise customers for SMB with quantity greater than 5 using : 
-
-**Formula:**
-```excel
-= COUNTIFS(data1!J2:J501,"SMB",data1!E2:E501,"Furniture",data1!H2:H501,">5")
-```
-This formula Counted rows where Column J = SMB, Column E = Furniture, and Column H > 5.
-
----
-
-#### What is the total sum of all SalesAmount in the dataset?
-
-Computed the total sum of all SalesAmount in the dataset using :
-
-**Formula:**
-```excel
-= SUM(data1!I2:I501)
-```
-this formula Sum all values in column I (range I2:I501).
-
----
-
-#### How many orders are there in the dataset?
-
-Calculated the number of orders in the data set using : 
-
-**Formula:**
-```excel
-= COUNTA(data1!A2:A501)
-```
-This Formula Count all non-empty cells in column A (range A2:A501).
-
----
-
-### What is the average SalesAmount per order?
-
-Calculated the average SalesAmount per order using : 
-
-**Formula:**
-```excel
-= AVERAGE(data1!I2:I501)
-```
-this formula Calculated the average of all values in column I (range I2:I501).
-
----
-
-#### Which product has the highest total SalesAmount?
-
-found the product that has highest total sales amount using : 
-
-**Formula:**
-```excel
-=INDEX(data1!E2:E501,MATCH(MAX(SUMIF(data1!E2:E501,data1!E2:E501,data1!H2:H501)),SUMIF(data1!E2:E501,data1!E2:E501,data1!H2:H501),0))
-```
-SUMIF(data1!E2:E501, data1!E2:E501, data1!H2:H501) Calculated total values in column H for each unique item in column E.
-
-MAX(...) Find the highest total from the sums calculated in Step 1.
-
-MATCH(MAX(...), SUMIF(...), 0) Find the position of the maximum total within the SUMIF results.
-
-INDEX(data1!E2:E501, MATCH(...)) Retrieve the item name from column E corresponding to the position found in Step 3.
-
-As a result this formula returns the item in column E with the highest total in column H.
-
----
-
-#### Which region has the highest total SalesAmount?
-
-Found the region that has the highest total SalesAmount using : 
-
-**Formula:**
-```excel
-=INDEX(data1!C2:C501,MATCH(MAX(SUMIF(data1!C2:C501,data1!C2:C501,data1!I2:I501)),SUMIF(data1!C2:C501,data1!C2:C501,data1!I2:I501),0))
-```
-SUMIF(data1!C2:C501, data1!C2:C501, data1!I2:I501) Calculated the total of column I for each unique value in column C.
-
-MAX(...) Found the maximum total from Step 1.
-
-MATCH(MAX(...), SUMIF(...), 0) Found the position of the maximum total within the list of SUMIF results.
-
-INDEX(data1!C2:C501, MATCH(...)) Retrieved the region name from column C that corresponds to the maximum total.
-
-As a Result this formula returns the region with the highest total sales in column I.
+`SUMIFS` Found rows where Category = Electronics, Region = West, Date between 1-Apr-2023 and 30-Jun-2023, then sums corresponding I column values.
 
 ---
 
@@ -331,3 +216,12 @@ HR Analytics Dashboard Project/
 END ─────────────────────────────────────────────
 ```
 
+#### Calculate Total Sales for Electronics in the West Region during Q2 2023 (April-June)
+
+Calculated the Total Sales for Electronics in the West Region during Q2 2023 (April-June) using : 
+
+**Formula:**
+```excel
+=SUMIFS(data1!I2:I501,data1!E2:E501,"Electronics",data1!C2:C501,"West",data1!B2:B501,">="&DATE(2023,4,1),data1!B2:B501,"<="&DATE(2023,6,30))
+```
+SUMIFS Found rows where Category = Electronics, Region = West, Date between 1-Apr-2023 and 30-Jun-2023, then sums corresponding I column values.
