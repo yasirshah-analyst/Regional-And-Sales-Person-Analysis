@@ -41,9 +41,9 @@ Build an Excel dashboard that lets stakeholders:
 - **Type:** Sales transaction data
 > **Privacy note:** The full workbook is not shared publicly. Sample screenshots are included below to demonstrate the analysis workflow.
 
-**Data set Preview**
+**View Screenshot**
 
-[Data set rows 1_to_35_](Data/screenshot/dataset.png)
+[Data set Preview rows 1_to_35_](Data/screenshot/dataset.png)
 
 ---
 
@@ -172,13 +172,8 @@ Regional-And-Sales-Person-Analysis/
 ---
 
 ## 👤 Author
-
-- Yasir Shah
-- Data Analyst | SQL | Power BI | Excel
-
----
-
-## Connect
+ 
+Yasir Shah | Data Analyst | SQL | Power BI | Excel
 
 - www.linkedin.com/in/yasir-shah-2364183b3
 - shahyasir443@gmail.com
