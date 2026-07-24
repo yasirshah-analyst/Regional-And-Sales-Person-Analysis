@@ -63,13 +63,6 @@ Raw Data → Data Validation → Formula-Based Analysis → Pivot Table Summariz
 ```
 ---
 
-
----
-
-
-
----
-
 ## Data Analysis (Advanced Formulas)
 The dataset was used to answer specific business questions using advanced Excel formulas:
  
@@ -92,9 +85,9 @@ The dataset was used to answer specific business questions using advanced Excel 
 
 ---
 
-**Advanced Excel Formula Analysis Screenshot**
+**View Screenshot**
 
-[kpi_Calculation](Analysis/screenshots/Formulas.png)
+[Advanced Excel Formula Analysis](Analysis/screenshots/Formulas.png)
 
 ---
 
