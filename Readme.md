@@ -41,9 +41,9 @@ Build an Excel dashboard that lets stakeholders:
 - **Type:** Sales transaction data
 > **Privacy note:** The full workbook is not shared publicly. Sample screenshots are included below to demonstrate the analysis workflow.
 
-**Data set from row 1 to 35**
-Screenshot:
-![1_to_35_](Data/screenshot/dataset.png)
+**Data set Preview**
+
+[Data set rows 1_to_35_](Data/screenshot/dataset.png)
 
 ---
 
