@@ -92,9 +92,9 @@ The dataset was used to answer specific business questions using advanced Excel 
 
 ---
 
-**Advanced Excel Formula Analysis**
-Screenshot:
-![kpi_Calculation](Analysis/screenshots/Formulas.png)
+**Advanced Excel Formula Analysis Screenshot**
+
+[kpi_Calculation](Analysis/screenshots/Formulas.png)
 
 ---
 
@@ -102,22 +102,25 @@ Screenshot:
 
 **Monthly Sales Trend** — summarizes total sales by month to reveal growth patterns. 
 
-Analysis Screenshot:
-![Analysis](Analysis/screenshots/table_1.png)
+**View Screenshot**
+
+[Monthly Sales Trend](Analysis/screenshots/table_1.png)
 
 ---
 
 **Sales by Region** — breaks down revenue by geography to compare regional performance.
 
-Analysis Screenshot:
-![Analysis](Analysis/screenshots/table_2.png)
+**View Screenshot**
+
+[Sales by Region](Analysis/screenshots/table_2.png)
 
 ---
 
 **Individual Salesperson Performance** — evaluates each rep's contribution to total revenue.
 
-Analysis Screenshot:
-![Analysis](Analysis/screenshots/table_3.png)
+**View Screenshot**
+
+[Individual Salesperson Performance](Analysis/screenshots/table_3.png)
 
 ---
 
